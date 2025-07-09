@@ -1,0 +1,5 @@
+threshold: 30
+areas: ["中央区", "天王寺区", "北区", "福島区"]
+
+x_api:
+    bearer_token: ""

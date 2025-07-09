@@ -6,14 +6,14 @@ A simple Streamlit app template for you to modify!
 
 ### How to run it on your own machine
 
-1. Install the requirements
+# 大阪市内　駅近物件の過熱度ダッシュボード
+Streamlitで大阪市内の不動産価格上昇率と市場ムードを可視化。
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+## セットアップ
+'pip install -r requirement.txt'
 
-2. Run the app
+## StreamlitによるWebアプリのRun(bashターミナル)
+'streamlit run app.py'
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+# ディレクトリ構成
+データは'data/raw/'に格納
