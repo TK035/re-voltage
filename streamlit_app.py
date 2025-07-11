@@ -16,7 +16,7 @@ st.set_page_config(page_title = "大阪市　物件過熱度ダッシュボー�
 
 #不動産データ
 try:
-    df = pd.read_csv("/workspaces/re-voltage/data/raw/used_redata.csv", encoding="932")
+    df = pd.read_csv("data/raw/used_redata.csv", encoding="932")
     df = df.rename(columns = {"市区町村名" : "area", "取引価格（総額）" : "price", "取引時期" : "year", "最寄駅：距離（分）" : "distance", "建築年" : "built_year"})
     df["year"] = df["year"].apply(lambda x:int(re.search(r'\d{4}', str(x)).group()) if re.search(r'\d{4}', str(x)) else None)
     if df["year"].isnull().any():
